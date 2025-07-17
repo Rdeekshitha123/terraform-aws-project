@@ -6,7 +6,7 @@ data "aws_iam_policy_document" "custom_policy" {
   }
 }
 resource "aws_iam_policy" "custom_policy" {
-  name        = var.policy_name
+  name        = "CustomListS3Policy"
   description = "Custom policy for S3 listing"
   policy      = data.aws_iam_policy_document.custom_policy.json
 }
