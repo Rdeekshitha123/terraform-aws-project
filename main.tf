@@ -48,9 +48,6 @@ module "iam_user" {
 }
 module "custom_policy" {
   source      = "./modules/policy"
-  policy_name = "CustomListS3Policy"
+ 
 }
-module "custom_policy" {
-  source      = "./modules/policy"
-  policy_name = "CustomListS3Policy"
-}
+
