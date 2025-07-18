@@ -43,7 +43,7 @@ resource "aws_security_group" "allow_ssh" {
 }
 
 module "iam_user" {
-  source    = "./modules/IAM"
+  source    = "./modules/IAM/user"
   
 }
 module "custom_policy" {
