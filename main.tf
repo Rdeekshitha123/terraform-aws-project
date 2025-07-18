@@ -47,7 +47,10 @@ module "iam_user" {
   
 }
 module "custom_policy" {
-  source      = "./modules/policy"
+  source      = "./modules/IAM"
  
 }
 
+module "iam_group" {
+source = "./modules/IAM/groups"
+}
