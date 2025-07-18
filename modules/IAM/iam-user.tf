@@ -21,3 +21,6 @@ output "secret_access_key" {
 sensitive= true
 }
 
+output "user_name_out" {
+  value = aws_iam_user.iam_user_1.name
+}

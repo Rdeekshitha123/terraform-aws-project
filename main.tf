@@ -54,3 +54,9 @@ module "custom_policy" {
 module "iam_group" {
 source = "./modules/IAM/groups"
 }
+
+module "iam_user_group_membership" {
+source="./modules/IAM/user_group_membership"
+  user_name   = module.iam_user.user_name_out
+  group_names = module.iam_group.group_names_out
+}
