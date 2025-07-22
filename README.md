@@ -22,6 +22,7 @@ Before using this project, make sure the following tools are installed:
 ├── main.tf           # Terraform configuration for AWS resources
 ├── providers.tf      # AWS provider setup
 ├── outputs.tf        # Outputs after resource creation
+├── variables.tf      # Variables to store the values
 └── README.md         # Project documentation
 
 
