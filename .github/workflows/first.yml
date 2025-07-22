@@ -1,0 +1,14 @@
+name: Simple PR Workflow
+
+on:
+  pull_request:
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Greet PR
+        run: echo "Hello from GitHub Actions! A pull request was triggered."
