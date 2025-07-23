@@ -7,7 +7,7 @@ on:
 
 jobs:
   self-hosted-task:
-    runs-on: self-hosted
+    runs-on: [self-hosted, first-runner]
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
