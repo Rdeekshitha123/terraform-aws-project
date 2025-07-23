@@ -9,13 +9,14 @@ bucket="devon-credentials002"
 
 force_destroy=true
 }
-resource "aws_s3_bucket" "devon-credentials003"{
-bucket="devon-credentials003"
+resource "aws_s3_bucket" "devon-credentials006"{
+bucket="devon-credentials006"
 
 force_destroy=true
 }
-resource "aws_s3_bucket" "devon-credentials004"{
-bucket="devon-credentials004"
+resource "aws_s3_bucket" "devon-credentials007"{
+bucket="devon-credentials007"
 
 force_destroy=true
 }
+
