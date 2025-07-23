@@ -12,6 +12,7 @@ force_destroy=true
 
 resource "aws_s3_bucket" "devon-credentials007"{
 bucket="devon-credentials007"
-
 force_destroy=true
 }
+
+
