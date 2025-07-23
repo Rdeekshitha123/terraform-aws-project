@@ -3,7 +3,7 @@ name: PR Automation on Self-Hosted Runner
 on:
   pull_request:
     branches:
-      - added_new_bucket_006
+      - added_new_bucket_007
 
 jobs:
   self-hosted-task:
