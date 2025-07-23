@@ -1,0 +1,20 @@
+name: PR Automation on Self-Hosted Runner
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  self-hosted-task:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Run Script on PR
+        run: |
+          echo " Pull Request detected!"
+          echo "🛠️Running automation on self-hosted runner..."
+          date
+          echo "✔️Task complete."
