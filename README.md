@@ -1,6 +1,6 @@
 # 🌐 Terraform AWS Infrastructure Setup
 
-This repository contains Terraform code to provision and manage AWS infrastructure such as IAM users, groups, and policies. It's modular, reusable, and ideal for both beginners and professionals looking to automate cloud resource deployment.
+This repository contains Terraform code to provision and manage AWS infrastructure such as IAM users, groups, and policies,EC2 instance, S3 bucket and VPC. It's modular, reusable, and ideal for both beginners and professionals looking to automate cloud resource deployment.
 
 ---
 
