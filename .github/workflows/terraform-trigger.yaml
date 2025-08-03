@@ -7,7 +7,7 @@ on:
 
 jobs:
   terraform:
-    name: Terraform Init/Plan/Apply
+    name: Terraform Init/Plan/Apply through workflow
     runs-on: ubuntu-latest
 
     env:
