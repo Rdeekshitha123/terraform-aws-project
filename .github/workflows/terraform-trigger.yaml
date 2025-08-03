@@ -1,4 +1,4 @@
-name: Terraform CI/CD (Latest)
+name: Terraform workflow
 
 on:
   push:
@@ -10,6 +10,11 @@ jobs:
     name: Terraform Init/Plan/Apply
     runs-on: ubuntu-latest
 
+    env:
+      AWS_ACCESS_KEY_ID: AKIAUFSEEQX4O227PWGG
+      AWS_SECRET_ACCESS_KEY: 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
+      AWS_REGION: eu-north-1
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -17,9 +22,9 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v3
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: eu-north-1
+          aws-access-key-id: ${{ env.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ env.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
 
       - name: Set up Terraform v1.7.5
         uses: hashicorp/setup-terraform@v3
