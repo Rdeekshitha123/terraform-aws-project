@@ -2,3 +2,6 @@
 .actions-runner/
 terraform.tfstate
 terraform.tfstate.backup
+terraform.tfvars
+crash.log
+*.tfstate.*
