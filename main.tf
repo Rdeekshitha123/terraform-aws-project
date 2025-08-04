@@ -1,10 +1,3 @@
-terraform {
-  backend "s3" {
-    bucket = "bucketforstatefile001"
-    region = "eu-north-1"
-  }
-}
-
 module "ec2" {
   source = "./modules/ec2"
  subnet_id         = module.vpc.public_subnet_id
