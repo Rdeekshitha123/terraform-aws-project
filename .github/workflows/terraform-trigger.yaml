@@ -1,4 +1,4 @@
-name: Terraform Init/Plan/Apply workflows
+name: Terraform Init/Plan/Apply workflow
 
 on:
   push:
