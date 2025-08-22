@@ -4,9 +4,7 @@ instance_type="t3.micro"
 tags={
 Name="my-ec2"}
 
-/*subnet_id=aws_subnet.public-subnet-1.id
-vpc_security_group_ids=aws_security_group.allow_ssh.id
-key_name=aws_key_pair.mykeypair.key_name */
+
   subnet_id              = var.subnet_id
   vpc_security_group_ids = [var.security_group_id]
   key_name               = var.key_name
