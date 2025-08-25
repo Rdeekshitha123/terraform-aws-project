@@ -21,4 +21,7 @@ bucket="devon-credentials008"
 force_destroy=true
 }
 
-
+resource "aws_s3_bucket" "devon-credentials009"{
+bucket="devon-credentials009"
+force_destroy=true
+}
