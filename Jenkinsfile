@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-  ZZ
+  
         AWS_CREDS = credentials('aws-jenkins-creds')
     }
     stages {
