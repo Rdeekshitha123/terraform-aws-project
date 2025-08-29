@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        TF_WORKING_DIR = 'terraform-aws-project'   
+        TF_WORKING_DIR = '.'   
         PLAN_FILE = 'tfplan.binary'
     }
 
