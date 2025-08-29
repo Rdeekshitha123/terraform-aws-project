@@ -55,11 +55,7 @@ pipeline {
             }
         }
 
-        stage('Approve Apply') {
-            steps {
-                input message: "Apply Terraform plan to AWS?", ok: "Apply"
-            }
-        }
+    
 
         stage('Terraform Apply') {
             steps {
