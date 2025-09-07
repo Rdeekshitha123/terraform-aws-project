@@ -1,0 +1,5 @@
+.terraform/
+.actions-runner/
+terraform.tfstate
+terraform.tfstate.backup
+
