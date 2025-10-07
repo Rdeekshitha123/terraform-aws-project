@@ -1,10 +1,7 @@
-FROM hashicorp/terraform:1.13.1
-RUN apk add --no-cache bash
+FROM alpine:3.18
+
+RUN apk add --no-cache bash terraform
 WORKDIR /app
-
-
 COPY . .
 
-
 CMD ["terraform", "--version"]
-
